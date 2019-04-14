@@ -6,11 +6,13 @@
     "build": "webpack",
     "build:prod": "webpack --env.production",
     "watch": "webpack --watch",
-    "watch:prod": "webpack --watch --env.production"
+    "watch:prod": "webpack --watch --env.production",
+    "deploy": "now ./dist"
   },
   "author": "Andrea Briganti <kbytesys@gmail.com>",
   "license": "MPL-2.0",
   "devDependencies": {
+    "now": "^15.0.4",
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
     "autoprefixer": "^9.5.0",
