@@ -17,11 +17,10 @@ module.exports = env => {
     mode: devMode ? 'development' : 'production',
     entry: {
       main: './src/index.js',
-      typescript_demo: './src/typescript_demo.ts',
       vendor: './src/vendor.js'
     },
     output: {
-      path: path.join(__dirname, 'dist'),
+      path: path.join(__dirname, 'output'),
       filename: 'assets/js/[name].js',
       library: 'MainModule',
     },
@@ -65,12 +64,6 @@ module.exports = env => {
           ]
         },
         {
-          enforce: 'pre',
-          test: /\.js$/,
-          exclude: /node_modules/,
-          loader: 'eslint-loader'
-        },
-        {
           test: /\.js$/,
           loader: 'babel-loader',
           query: {
@@ -92,11 +85,10 @@ module.exports = env => {
       new MiniCssExtractPlugin({
         filename: 'assets/css/[name].css'
       }),
-      new StyleLintPlugin(),
       new BrowserSyncPlugin({
         host: 'localhost',
         port: 3000,
-        server: { baseDir: ['dist'] }
+        server: { baseDir: ['output'] }
       }),
       new ExtraWatchWebpackPlugin({
         dirs: ['templates']

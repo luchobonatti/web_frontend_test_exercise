@@ -1,16 +1,15 @@
 {
-  "name": "webpack-static-nunjucks-scaffolding",
+  "name": "web_frontend_test_exercise",
   "version": "0.0.1",
-  "description": "simple webpack scaffolding with nunjucks",
+  "description": "A frontend test excercise",
   "scripts": {
     "build": "webpack",
     "build:prod": "webpack --env.production",
     "watch": "webpack --watch",
     "watch:prod": "webpack --watch --env.production",
-    "deploy": "now ./dist"
+    "deploy": "now ./output"
   },
-  "author": "Andrea Briganti <kbytesys@gmail.com>",
-  "license": "MPL-2.0",
+  "author": "Luciano Bonatti <lucho.bonatti@gmail.com>",
   "devDependencies": {
     "now": "^15.0.4",
     "@babel/core": "^7.4.3",

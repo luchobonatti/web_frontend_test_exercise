@@ -8,34 +8,32 @@ footer {
       }
     }
 
-
-
-    p.title{
+    p.title {
       font-weight: bold;
       font-size: 24px;
     }
-    ul:not(.social-icons){
+    ul:not(.social-icons) {
       padding-right: 50px;
     }
-    ul li a{
+    ul li a {
       font-size: 16px;
       color: #b2b5b7;
       line-height: 30px;
-      transition: color .3s;
-      &:hover{
+      transition: color 0.3s;
+      &:hover {
         color: #fff;
       }
     }
 
-    .social-icons{
-      li:not(:last-child){
+    .social-icons {
+      li:not(:last-child) {
         padding-right: 30px;
       }
-      .icon-medium{
+      .icon-medium {
         font-size: 25px;
         transform: translateX(-3px);
       }
-      a{
+      a {
         display: flex;
         border-radius: 50%;
         background-color: #fff;
@@ -43,8 +41,9 @@ footer {
         height: 55px;
         align-items: center;
         justify-content: center;
-        transition: all .3s;
-        &, &:hover{
+        transition: all 0.3s;
+        &,
+        &:hover {
           color: #7f7f7f;
           font-size: 35px;
         }

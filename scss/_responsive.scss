@@ -1,41 +1,41 @@
-@media (max-width: 992px){
-  section{
-    &:after{
+@media (max-width: 992px) {
+  section {
+    &:after {
       height: 50px !important;
     }
   }
-  section .content{
+  section .content {
     padding-left: 15px;
     padding-right: 15px;
   }
-  #banner{
-    .content{
+  #banner {
+    .content {
       padding-bottom: 40px !important;
-      img{
+      img {
         padding-top: 50px;
         max-width: 90%;
       }
     }
   }
 
-  .sections{
-    section{
-      .fix-width{
+  .sections {
+    section {
+      .fix-width {
         flex-direction: column !important;
       }
-      .text-content{
-        padding:0 15px !important;
+      .text-content {
+        padding: 0 15px !important;
         width: 100% !important;
-        h3{
+        h3 {
           font-size: 26px;
           font-weight: bold;
         }
-        p{
+        p {
           font-size: 14px;
           color: #b2b5b7;
           padding-bottom: 30px;
         }
-        h4{
+        h4 {
           font-weight: bold;
           font-size: 20px;
           color: #fe6b20;
@@ -44,32 +44,32 @@
     }
   }
 
-  footer{
-    .row{
+  footer {
+    .row {
       text-align: center;
-      .col{
+      .col {
         padding: 15px 0;
       }
-      .social-icons{
+      .social-icons {
         padding-right: 0;
       }
-      .d-flex{
+      .d-flex {
         justify-content: center;
-        ul:last-child{
+        ul:last-child {
           padding-right: 0;
         }
       }
     }
-    .section-footer{
+    .section-footer {
       padding: 50px 0 60px;
     }
-    .copyright p{
+    .copyright p {
       max-width: 270px;
     }
   }
 
-  .main-header{
-    .download-btn{
+  .main-header {
+    .download-btn {
       right: 15px;
       left: auto;
       transform: translateX(0) translateY(-50%);
@@ -81,16 +81,16 @@
       font-weight: 800;
       padding: 0 13px;
     }
-    .brand-name{
+    .brand-name {
       padding-left: 10px;
       font-size: 21px;
     }
-    .brand-logo{
+    .brand-logo {
       padding-left: 10px;
-      img{
+      img {
         max-width: 60px;
       }
-      &:after{
+      &:after {
         border-width: 27px 27px 0 27px;
         left: 13px;
       }
