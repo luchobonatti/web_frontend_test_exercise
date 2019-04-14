@@ -87,7 +87,7 @@ module.exports = env => {
     devtool: 'source-map',
     plugins: [
       new NunjucksWebpackPlugin({
-        templates: nunjuckspages
+        templates: nunjuckspages,
       }),
       new MiniCssExtractPlugin({
         filename: 'assets/css/[name].css'

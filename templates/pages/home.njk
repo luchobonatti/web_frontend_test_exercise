@@ -4,78 +4,55 @@
 {% block content %}
     <section id="banner">
         <div class="content">
-            <img src="/assets/images/main-banner.png" alt="Banner" class="img-fluid mx-auto d-block">
+            <img
+                    data-aos="{{ sections.banner.art.animation }}"
+                    src="{{ sections.banner.art.img }}"
+                    alt="{{ sections.banner.art.alt }}"
+                    class="img-fluid mx-auto d-block"
+            >
             <h2>
                 <img
-                        src="/assets/images/main-banner-text.png"
-                        alt="CREATE. ANIMATE. PLAY."
+                        data-aos="{{ sections.banner.text.animation }}"
+                        data-aos-delay="300"
+                        src="{{ sections.banner.text.img }}"
+                        alt="{{ sections.banner.text.alt }}"
                         class="img-fluid mx-auto d-block"
                 >
             </h2>
-            <p class="m-0 text-center">
-                VoxEditor is the first software that allows you to create your own voxel models,
-                rig them and animate them in no time.
+            <p class="m-0 text-center" data-aos="fade-up">
+                {{ sections.banner.text_content }}
             </p>
         </div>
     </section>
-
-
-    <section id="modeling-tools">
-        <div class="content">
-            <div class="fix-width d-flex align-items-center">
-                <div class="img-content">
-                    <img src="/assets/images/modeling-tools.png" alt="Modeling tools" class="img-fluid mx-auto d-block">
+    <div class="sections">
+        {% for section in sections.others %}
+            <section id="{{ section.id }}">
+                <div class="content">
+                    <div class="fix-width d-flex align-items-center justify-content-center">
+                        <div class="img-content" data-aos="fade-down" data-aos-offset="300">
+                            <img src="{{ section.img }}" alt="Modeling tools" class="img-fluid mx-auto d-block">
+                        </div>
+                        <div
+                                class="text-content"
+                                data-aos="fade-left"
+                                data-aos-offset="500"
+                                data-aos-delay="100"
+                        >
+                            <h3>{{ section.title }}</h3>
+                            <p>{{ section.description }}</p>
+                            {% if section.features.length %}
+                                <h4>FEATURES</h4>
+                                <ul class="custom-bullets">
+                                    {% for feature in section.features %}
+                                        <li>{{ feature }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </div>
+                    </div>
                 </div>
-                <div class="text-content">
-                    <h3>POWERFUL EASY TO USE MODELING TOOLS</h3>
-                    <p>Make the most of your creativity with a robust set of tools.
-                       If you are an advanced 3D modeler or just starting out,
-                       with our super user-friendly interface you will creating
-                       amazing stuff right away.</p>
-                    <h4>FEATURES</h4>
-                    <ul class="custom-bullets">
-                        <li>All in one software with incredible performance</li>
-                        <li>Windows and Mac supported</li>
-                        <li>Amazing voxel creation tools</li>
-                        <li>Emisive Wand. Make your work glow</li>
-                        <li>Increase your voxels to get that level of detail</li>
-                        <li>Work with a big Canvas</li>
-                        <li>Mirror XYZ. Work less, we take care of the rest</li>
-                        <li>Voxel, Quads and super fast Render view</li>
-                        <li>Advanced Color Palette</li>
-                        <li>Super friendly 3D enviroment to work</li>
-                        <li>And much more</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="animation">
-        <div class="content">
-            <div class="fix-width d-flex align-items-center justify-content-center">
-                <div class="text-content">
-                    <h3>ANIMATE YOUR CREATIONS</h3>
-                    <p>A game changer in the voxel world. With our own
-                       Skeleton System, VoxEditor allows you to rig and
-                       animate anything that you want using the timeline
-                       with a super easy to use keyframing mode.</p>
-                    <h4>FEATURES</h4>
-                    <ul class="custom-bullets">
-                        <li>Animation! Bring your creation to life</li>
-                        <li>Skeleton System</li>
-                        <li>Cut & Rig</li>
-                        <li>Powerful Timeline</li>
-                        <li>Keyframing interpolation</li>
-                        <li>Curves</li>
-                        <li>Animations integrated in one file
-                    </ul>
-                </div>
-                <div class="img-content">
-                    <img src="/assets/images/animation.png" alt="Animation" class="img-fluid mx-auto d-block">
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
+        {% endfor %}
+    </div>
 
 {% endblock %}

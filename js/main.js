@@ -1,4 +1,5 @@
 /* global alert */
-export function testme() {
-  alert('hi!');
-}
+AOS.init({
+    duration: 600,
+    delay: 100,
+});
