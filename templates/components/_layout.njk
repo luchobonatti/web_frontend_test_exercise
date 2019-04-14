@@ -1,0 +1,26 @@
+<html lang="it">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" type="text/css" href="assets/css/vendor.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+        <title>VoxEditor | Create, Animate & Play</title>
+    </head>
+    <body class="{{ body_class }}">
+
+    {% include "templates/components/header.njk" %}
+
+    <main role="main">
+
+        {% block content %}
+        {% endblock %}
+
+    </main><!-- /.container -->
+    {% include "templates/components/footer.njk" %}
+        <script src="assets/js/vendor.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

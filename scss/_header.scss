@@ -1,0 +1,45 @@
+.main-header{
+  height: 60px;
+  background-color: #151619;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  .brand-logo{
+    padding-top: 20px;
+    padding-left: 20px;
+    &:after{
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 70px 70px 0 70px;
+      border-color: #151619 transparent transparent transparent;
+      position: absolute;
+      left: 0;
+      top: 60px;
+      z-index: -1;
+    }
+  }
+  .brand-name{
+    font-weight: bold;
+    font-size: 24px;
+    color: #505052;
+    margin-top: auto;
+    margin-bottom: 10px;
+    line-height: 1;
+    padding-left: 33px;
+  }
+  .download-btn{
+    height: 40px;
+    border-radius: 7px;
+    background-color: #3abeef;
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 800;
+    padding: 0 17px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
