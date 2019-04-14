@@ -14,7 +14,7 @@ footer {
       font-weight: bold;
       font-size: 24px;
     }
-    ul{
+    ul:not(.social-icons){
       padding-right: 50px;
     }
     ul li a{
@@ -55,6 +55,8 @@ footer {
     height: 60px;
     background-color: #242527;
     p {
+      padding: 0 15px;
+      text-align: center;
       color: #505052;
       font-size: 13px;
     }
