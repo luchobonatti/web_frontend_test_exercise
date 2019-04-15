@@ -35,8 +35,8 @@ $ npm run deploy
 ```
 
 ## Edit content and add more sections
-If you need to edit the page content, you have to edit the file: ```nunjuckspages.js```, that find it in the project root.
-If you need to add more sections, in the previous file, there is an array with sections data.
+If you want to edit the page content you have to edit the file: nunjuckspages.js, is in the project root. 
+If you want to add more sections, in the previous file there is an array with sections. 
 The logic is:
 * The banner (first section) is a separated section.
 * All others sections, if they are odd will take one style, and if they are even, will take other style. (talking about position number)
