@@ -5,7 +5,6 @@ const ExtraWatchWebpackPlugin = require('extra-watch-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const NunjucksWebpackPlugin = require('nunjucks-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const StyleLintPlugin = require('stylelint-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
 const nunjuckspages = require('./nunjuckspages');
@@ -22,7 +21,7 @@ module.exports = env => {
     output: {
       path: path.join(__dirname, 'output'),
       filename: 'assets/js/[name].js',
-      library: 'MainModule',
+      library: 'MainModule'
     },
     module: {
       rules: [

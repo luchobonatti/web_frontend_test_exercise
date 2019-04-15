@@ -8,28 +8,30 @@ A complete landing page with the follow stack:
 
 DEMO WEB SITE: https://output-82pd1kgu0.now.sh/
 
+NOTE: You need node >= 10
+
 ## Intructions
     
   - Clone the repository
   - In project root, run:
 ```js
 //Install required dependencies
-npm install
+$ npm install
 
 //Develop mode
-npm run watch
+$ npm run watch
 
 //Build develop mode
-npm run build
+$ npm run build
 
 //Build for production in output folder
-npm run build:prod
+$ npm run build:prod
 
 //Watch production mode
-npm run watch:prod
+$ npm run watch:prod
 
 //Deploy to now (you have to have an account)
-npm run deploy
+$ npm run deploy
 ```
 
 ## Edit content and add more sections
