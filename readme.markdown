@@ -10,7 +10,7 @@ DEMO WEB SITE: https://output-82pd1kgu0.now.sh/
 
 NOTE: You need node >= 10
 
-## Intructions
+## Instructions
     
   - Clone the repository
   - In project root, run:
@@ -34,12 +34,12 @@ $ npm run watch:prod
 $ npm run deploy
 ```
 
-## Edit content and add more sections
+## Edit content and sections
 If you want to edit the page content you have to edit the file: nunjuckspages.js, is in the project root. 
 If you want to add more sections, in the previous file there is an array with sections. 
 The logic is:
 * The banner (first section) is a separated section.
-* All others sections, if they are odd will take one style, and if they are even, will take other style. (talking about position number)
+* Also you have odd and even sections, these sections have their own style (odd and even is the position number).
 * The odd sections have an image in the right side and the text in the left side
 * The even sections have an image in the left side and the text in the right side
 
