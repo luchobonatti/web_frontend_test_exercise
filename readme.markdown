@@ -15,22 +15,22 @@ NOTE: You need node >= 10
   - Clone the repository
   - In project root, run:
 ```js
-//Install required dependencies
+// Install required dependencies
 $ npm install
 
-//Develop mode
+// Develop mode
 $ npm run watch
 
-//Build develop mode
+// Build develop mode
 $ npm run build
 
-//Build for production in output folder
+// Build for production in output folder
 $ npm run build:prod
 
-//Watch production mode
+// Watch production mode
 $ npm run watch:prod
 
-//Deploy to now (you have to have an account)
+// Deploy to now (you have to have an account)
 $ npm run deploy
 ```
 
