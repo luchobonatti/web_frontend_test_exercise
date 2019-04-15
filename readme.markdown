@@ -6,7 +6,7 @@ A complete landing page with the follow stack:
 * AOS [Animate on Scroll]
 * Deploy to Now
 
-DEMO WEB SITE: https://output-82pd1kgu0.now.sh/
+DEMO WEB SITE: https://output-phmdlmjpa.now.sh 
 
 NOTE: You need node >= 10
 
